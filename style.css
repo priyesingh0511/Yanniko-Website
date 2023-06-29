@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    background: #181818;
+    color: #fff;
+    overflow: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 300;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /*Takes up all vertical height*/
+}
+
+#right{
+    flex: 6;
+}
+
+/* Signin */
+#signin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 2rem;
+}
+
+.logo{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#signin .Email{
+    width: 100%;
+    margin-bottom: 1.3rem;
+    padding: 12px 20px;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    opacity: 0.5;
+    color: #F7F7F9;
+}
+
+#signin .links,.or,.scnbtn{
+    width: 60%;
+}
+
+.or{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 10px;
+}
+.hor{
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+    margin-top: 10px;
+}
+.links a{
+    display: block;
+    color: #fff;
+    text-decoration: underline;
+    text-align: center;
+
+
+}
+::placeholder{
+    color: #F7F7F9;
+    opacity: 0.5;
+}
+
+
+.pribtn{
+    padding: 10px;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background: #ff4057;
+    text-align: center;
+    transition: all 0.25s;
+    font-weight: 500;
+    width: 100%;
+}
+
+.pribtn:hover{
+    background-color: #ff96a2;
+}
+
+.scnbtn{
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    border: 1px solid #F7F7F9;
+    border-radius: 2px;
+    font-weight: 500;
+    background: none;
+    text-align: center;
+    transition: all 0.25s;
+    font-weight: 500;
+    width: 100%;
+}
+
+.scnbtn:hover{
+    background-color: #ff4057;
+    border-color: #ff4057;
+}
+
+.foot a{
+    color: #ff4057;
+    text-decoration: underline;
+}
+
+#showcase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(background.jpeg) no-repeat center center / cover;
+    height: 100vh;
+}
+.scdbtn{
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    border: 1px solid #F7F7F9;
+    border-radius: 2px;
+    font-weight: 500;
+    background: none;
+    text-align: center;
+    transition: all 0.25s;
+    font-weight: 500;
+    width: 60%;
+    background-color: #F7F7F9;
+    margin: auto;
+}
+
+.scdbtn:hover{
+    background-color: #ff4057;
+    border-color: #ff4057;
+}
+
+.future{
+    color: #FFD700;
+}
+
+@media(max-width: 750px){
+    body{
+        overflow: auto;
+    }
+    #right{
+        display: none;
+    }
+    #left{
+        justify-content: start;
+        margin-top: 15px;
+    }
+    .logo{
+        margin-bottom: 2vh;
+    }
+}
